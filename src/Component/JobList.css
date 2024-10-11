@@ -1,0 +1,32 @@
+.joblist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.joblist .job {
+  padding: 20px;
+}
+.title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.jobDis{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-label{
+  font-weight: 600;
+}
+
+.FormButton{
+  border-top: 1px solid #dee2e6;
+  margin-top: 20px;
+  padding-top: 10px;
+}
