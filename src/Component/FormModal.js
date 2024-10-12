@@ -8,13 +8,14 @@ import "react-quill/dist/quill.snow.css";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
-function FormModal({ visible, setVisible, data }) {
+function FormModal({ visible, setVisible, data, onModalSubmit }) {
   const handleClose = () => {
     setVisible(false);
   };
-  const onSubmit = () => {
-    console.log("submit");
-    formik.handleReset();
+  const onSubmit = (values, { resetForm }) => {
+    onModalSubmit();
+    resetForm();
+    setVisible(false);
   };
   const formik = useFormik({
     initialValues: {
@@ -37,17 +38,17 @@ function FormModal({ visible, setVisible, data }) {
         .string()
         .email("Invalid Email address")
         .required("*this field is required"),
-      //   selectedSkills: yup.array().min(1, "Select atleast one Skill"),
-      //   details: yup.string().required("This Field is required"),
+      selectedSkills: yup.array().min(1, "Select atleast one Skill"),
+      details: yup.string().required("This Field is required"),
     }),
     onSubmit,
   });
-  console.log(formik);
 
-  const [selectedSkills, setSelectedSkills] = useState([]);
-
-  const handleChange = (selectedOptions) => {
-    setSelectedSkills(selectedOptions);
+  const handleSkillChange = (selectedSkills) => {
+    formik.setFieldValue("selectedSkills", selectedSkills);
+  };
+  const handleAboutChange = (value) => {
+    formik.setFieldValue("details", value);
   };
   return (
     <Modal show={visible} onHide={handleClose}>
@@ -101,13 +102,22 @@ function FormModal({ visible, setVisible, data }) {
               </label>
               <input
                 type="text"
-                className="form-control"
+                className={`form-control ${
+                  formik.errors.LastName && formik.touched.LastName
+                    ? "is-invalid"
+                    : formik.touched.LastName && !formik.errors.LastName
+                    ? "is-valid"
+                    : ""
+                }`}
                 id="lname"
                 placeholder="Enter LastName"
                 name="LastName"
                 value={formik.values.LastName}
                 onChange={formik.handleChange}
               />
+               {formik.errors.LastName && formik.touched.LastName && (
+                <p className="invalid-feedback">{formik.errors.LastName}</p>
+              )}
             </div>
             <div className="my-2">
               <label for="email" className="form-label">
@@ -115,27 +125,46 @@ function FormModal({ visible, setVisible, data }) {
               </label>
               <input
                 type="text"
-                className="form-control"
+                className={`form-control ${
+                  formik.errors.email && formik.touched.email
+                    ? "is-invalid"
+                    : formik.touched.email && !formik.errors.email
+                    ? "is-valid"
+                    : ""
+                }`}
                 id="email"
                 placeholder="Enter Email"
                 name="email"
                 value={formik.values.email}
                 onChange={formik.handleChange}
               />
+               {formik.errors.email && formik.touched.email && (
+                <p className="invalid-feedback">{formik.errors.email}</p>
+              )}
             </div>
             <div className="my-2">
-              <label for="skills" className="form-label">
+              <label htmlFor="skills" className="form-label">
                 Skills
               </label>
               <Select
                 isMulti
-                name="skills"
+                name="selectedSkills"
                 options={skillOptions}
-                value={selectedSkills}
-                onChange={handleChange}
+                className={`${
+                  formik.errors.selectedSkills && formik.touched.selectedSkills
+                    ? "is-invalid"
+                    : formik.touched.selectedSkills && !formik.errors.selectedSkills
+                    ? "is-valid"
+                    : ""
+                }`}
+                value={formik.values.selectedSkills}
+                onChange={handleSkillChange}
                 isSearchable
                 placeholder="Select skills"
               />
+               {formik.errors.selectedSkills && formik.touched.selectedSkills && (
+                <p className="invalid-feedback">{formik.errors.selectedSkills}</p>
+              )}
             </div>
             <div className="my-2">
               <label for="skills" className="form-label">
@@ -144,10 +173,20 @@ function FormModal({ visible, setVisible, data }) {
               <ReactQuill
                 placeholder="Write about yourself..."
                 theme="snow"
+                className={`${
+                  formik.errors.details && formik.touched.details
+                    ? "is-invalid"
+                    : formik.touched.details && !formik.errors.details
+                    ? "is-valid"
+                    : ""
+                }`}
                 value={formik.values.details}
-                onChange={formik.handleChange}
+                onChange={handleAboutChange}
                 onBlur={formik.handleBlur}
               />
+               {formik.errors.details && formik.touched.details && (
+                <p className="invalid-feedback">{formik.errors.details}</p>
+              )}
             </div>
             <div className="FormButton">
               <Button

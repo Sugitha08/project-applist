@@ -4,8 +4,6 @@ import { Tag } from "primereact/tag";
 import { Button } from "primereact/button";
 
 function JobModal({ visible, setVisible, data }) {
-  console.log(data);
-
   const handleClose = () => {
     setVisible(false);
   };
@@ -38,6 +36,7 @@ function JobModal({ visible, setVisible, data }) {
             <div className="">
               {data?.skillsRequired?.map((skill) => (
                 <Tag
+                key={skill.id}
                   style={{ background: "#f4f4f4", color: "#545454" }}
                   className="px-2 py-1 mx-1 my-1"
                   value={skill}
