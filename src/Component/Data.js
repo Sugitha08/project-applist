@@ -60,6 +60,64 @@ export const data = [
     jobDescription:
       "Lead our project teams to success by ensuring timely delivery of products and overseeing the project lifecycle from inception to completion.",
   },
+  {
+    id: 6,
+    logo: TechLogo,
+    jobTitle: "Software Engineer",
+    companyName: "Tech Innovatorsssss",
+    experienceRequired: 3,
+    skillsRequired: ["JavaScript", "React", "Node.js", "CSS"],
+    jobDescription:
+      "We are looking for a skilled software engineer with experience in building web applications using React and Node.js.",
+  },
+  {
+    id: 7,
+    logo: OneSolution,
+    jobTitle: "Data Scientist",
+    companyName: "Data Solutions",
+    experienceRequired: 2,
+    skillsRequired: ["Python", "Machine Learning", "SQL", "R"],
+    jobDescription:
+      "Join our team as a data scientist to help us analyze large data sets and derive actionable insights for business decisions.",
+  },
+  {
+    id: 8,
+    logo: "https://companylogos.com/logo3.png",
+    jobTitle: "UX Designer",
+    companyName: "Creative Designs Inc.",
+    experienceRequired: 4,
+    skillsRequired: ["Figma", "Adobe XD", "Prototyping", "UI/UX Design"],
+    jobDescription:
+      "We are seeking a creative UX designer with a passion for user-centric design and experience in creating wireframes and prototypes.",
+  },
+  {
+    id: 9,
+    logo: "https://companylogos.com/logo4.png",
+    jobTitle: "Full Stack Developer",
+    companyName: "Web Masters",
+    experienceRequired: 5,
+    skillsRequired: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+    ],
+    jobDescription:
+      "Looking for a full stack developer with extensive experience in both front-end and back-end technologies. You will be working on creating dynamic and scalable web applications.",
+  },
+  {
+    id: 10,
+    logo: "https://companylogos.com/logo5.png",
+    jobTitle: "Project Manager",
+    companyName: "Project Leaders Co.",
+    experienceRequired: 6,
+    skillsRequired: ["Agile", "Scrum", "Project Management", "Team Leadership"],
+    jobDescription:
+      "Lead our project teams to success by ensuring timely delivery of products and overseeing the project lifecycle from inception to completion.",
+  },
 ];
 
 
