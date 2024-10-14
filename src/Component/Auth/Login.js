@@ -78,7 +78,11 @@ function Login() {
                     >
                       Sign In
                     </button>
-                    <button type="button" className="btn btn-primary ms-2 mt-3">
+                    <button
+                      type="button"
+                      className="btn btn-primary ms-2 mt-3"
+                      onClick={() => navigate("/reg")}
+                    >
                       Sign Up
                     </button>
                   </div>
