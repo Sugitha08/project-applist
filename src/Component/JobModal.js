@@ -29,23 +29,26 @@ function JobModal({ visible, setVisible, data }) {
         <div className="jobDis">
           <h5 className="mb-0">About the job</h5>
           <div>
-            <h6 className="mb-0">Experience Required :  {data?.experienceRequired}years</h6>
+            <h6 className="mb-0">
+              Experience Required : {data?.experienceRequired}years
+            </h6>
           </div>
           <div>
             <h6 className="mb-2">Skills Required : </h6>
             <div className="">
               {data?.skillsRequired?.map((skill) => (
+                <div key={skill.id}>
                 <Tag
-                key={skill.id}
                   style={{ background: "#f4f4f4", color: "#545454" }}
                   className="px-2 py-1 mx-1 my-1"
                   value={skill}
                 ></Tag>
+                </div>
               ))}
             </div>
           </div>
           <div>
-            <h6>Job Description :  </h6>
+            <h6>Job Description : </h6>
             <p style={{ textIndent: "24px" }}>{data?.jobDescription}</p>
           </div>
         </div>
@@ -55,7 +58,7 @@ function JobModal({ visible, setVisible, data }) {
           label="Apply for Job"
           className="float-end p-2"
           onClick={handleFormOpen}
-          style={{ borderRadius: "7px",fontFamily:"inter var" }}
+          style={{ borderRadius: "7px", fontFamily: "inter var" }}
         />
       </Modal.Footer>
     </Modal>

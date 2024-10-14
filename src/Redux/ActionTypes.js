@@ -1,3 +1,32 @@
 export const GET_JOB_REQUEST ="GET_JOB_REQUEST"
 export const GET_JOB_SUCCESS ="GET_JOB_SUCCESS"
 export const GET_JOB_FAILURE ="GET_JOB_FAILURE"
+
+export const POST_JOB_REQUEST ="POST_JOB_REQUEST"
+export const POST_JOB_SUCCESS ="POST_JOB_SUCCESS"
+export const POST_JOB_FAILURE ="POST_JOB_FAILURE"
+
+export const DELETE_JOB_REQUEST ="DELETE_JOB_REQUEST"
+export const DELETE_JOB_SUCCESS ="DELETE_JOB_SUCCESS"
+export const DELETE_JOB_FAILURE ="DELETE_JOB_FAILURE"
+
+export const POST_APPLICATION_REQUEST = "POST_APPLICATION_REQUEST"
+export const POST_APPLICATION_SUCCESS = "POST_APPLICATION_SUCCESS"
+export const POST_APPLICATION_FAILURE = "POST_APPLICATION_FAILURE"
+
+export const GET_APPDETAILBYCI_REQUEST = "GET_APPDETAILBYCI_REQUEST"
+export const GET_APPDETAILBYCI_SUCCESS = "GET_APPDETAILBYCI_SUCCESS"
+export const GET_APPDETAILBYCI_FAILURE = "GET_APPLICATION_FAILURE"
+
+export const Login_Request = "Login_Request";
+export const Login_Success = "Login_Success";
+export const Login_Failure = "Login_Failure";
+
+export const CREATE_REQ = "CREATE_REQ";
+export const CREATE_SUC = "CREATE_SUC";
+export const CREATE_FAIL = "CREATE_FAIL";
+
+
+export const GET_REQ = "GET_REQ";
+export const GET_SUC = "GET_SUC";
+export const GET_FAIL = "GET_FAIL";

@@ -1,115 +1,245 @@
 {
-   "Jobs":[{
-    "id": 1,
-    "jobTitle": "Software Engineer",
-    "companyName": "Tech Innovators",
-    "experienceRequired": 3,
-    "skillsRequired": ["JavaScript", "React", "Node.js", "CSS"],
-    "jobDescription":
-      "We are looking for a skilled software engineer with experience in building web applications using React and Node.js."
-  },
-  {
-    "id": 2,
-    "jobTitle": "Data Scientist",
-    "companyName": "Data Solutions",
-    "experienceRequired": 2,
-    "skillsRequired": ["Python", "Machine Learning", "SQL", "R"],
-    "jobDescription":
-      "Join our team as a data scientist to help us analyze large data sets and derive actionable insights for business decisions."
-  },
-  {
-    "id": 3,
-    "logo": "https://companylogos.com/logo3.png",
-    "jobTitle": "UX Designer",
-    "companyName": "Creative Designs Inc.",
-    "experienceRequired": 4,
-    "skillsRequired": ["Figma", "Adobe XD", "Prototyping", "UI/UX Design"],
-    "jobDescription":
-      "We are seeking a creative UX designer with a passion for user-centric design and experience in creating wireframes and prototypes."
-  },
-  {
-    "id": 4,
-    "logo": "https://companylogos.com/logo4.png",
-    "jobTitle": "Full Stack Developer",
-    "companyName": "Web Masters",
-    "experienceRequired": 5,
-    "skillsRequired": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Express",
-      "React",
-      "Node.js"
-    ],
-    "jobDescription":
-      "Looking for a full stack developer with extensive experience in both front-end and back-end technologies. You will be working on creating dynamic and scalable web applications."
-  },
-  {
-    "id": 5,
-    "logo": "https://companylogos.com/logo5.png",
-    "jobTitle": "Project Manager",
-    "companyName": "Project Leaders Co.",
-    "experienceRequired": 6,
-    "skillsRequired": ["Agile", "Scrum", "Project Management", "Team Leadership"],
-    "jobDescription":
-      "Lead our project teams to success by ensuring timely delivery of products and overseeing the project lifecycle from inception to completion."
-  },
-  {
-    "id": 6,
-    "jobTitle": "Software Engineer",
-    "companyName": "Tech Innovatorsssss",
-    "experienceRequired": 3,
-    "skillsRequired": ["JavaScript", "React", "Node.js", "CSS"],
-    "jobDescription":
-      "We are looking for a skilled software engineer with experience in building web applications using React and Node.js."
-  },
-  {
-    "id": 7,
-    "jobTitle": "Data Scientist",
-    "companyName": "Data Solutions",
-    "experienceRequired": 2,
-    "skillsRequired": ["Python", "Machine Learning", "SQL", "R"],
-    "jobDescription":
-      "Join our team as a data scientist to help us analyze large data sets and derive actionable insights for business decisions."
-  },
-  {
-    "id": 8,
-    "logo": "https://companylogos.com/logo3.png",
-    "jobTitle": "UX Designer",
-    "companyName": "Creative Designs Inc.",
-    "experienceRequired": 4,
-    "skillsRequired": ["Figma", "Adobe XD", "Prototyping", "UI/UX Design"],
-    "jobDescription":
-      "We are seeking a creative UX designer with a passion for user-centric design and experience in creating wireframes and prototypes."
-  },
-  {
-    "id": 9,
-    "logo": "https://companylogos.com/logo4.png",
-    "jobTitle": "Full Stack Developer",
-    "companyName": "Web Masters",
-    "experienceRequired": 5,
-    "skillsRequired": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Express",
-      "React",
-      "Node.js"
-    ],
-    "jobDescription":
-      "Looking for a full stack developer with extensive experience in both front-end and back-end technologies. You will be working on creating dynamic and scalable web applications."
-  },
-  {
-    "id": 10,
-    "logo": "https://companylogos.com/logo5.png",
-    "jobTitle": "Project Manager",
-    "companyName": "Project Leaders Co.",
-    "experienceRequired": 6,
-    "skillsRequired": ["Agile", "Scrum", "Project Management", "Team Leadership"],
-    "jobDescription":
-      "Lead our project teams to success by ensuring timely delivery of products and overseeing the project lifecycle from inception to completion."
-
-  }]
+  "Jobs": [
+    {
+      "id": "2",
+      "jobTitle": "Data Scientist",
+      "companyName": "Data Solutions",
+      "experienceRequired": 2,
+      "skillsRequired": [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "R"
+      ],
+      "jobDescription": "Join our team as a data scientist to help us analyze large data sets and derive actionable insights for business decisions."
+    },
+    {
+      "id": "3",
+      "logo": "https://companylogos.com/logo3.png",
+      "jobTitle": "UX Designer",
+      "companyName": "Creative Designs Inc.",
+      "experienceRequired": 4,
+      "skillsRequired": [
+        "Figma",
+        "Adobe XD",
+        "Prototyping",
+        "UI/UX Design"
+      ],
+      "jobDescription": "We are seeking a creative UX designer with a passion for user-centric design and experience in creating wireframes and prototypes."
+    },
+    {
+      "id": "4",
+      "logo": "https://companylogos.com/logo4.png",
+      "jobTitle": "Full Stack Developer",
+      "companyName": "Web Masters",
+      "experienceRequired": 5,
+      "skillsRequired": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js"
+      ],
+      "jobDescription": "Looking for a full stack developer with extensive experience in both front-end and back-end technologies. You will be working on creating dynamic and scalable web applications."
+    },
+    {
+      "id": "5",
+      "logo": "https://companylogos.com/logo5.png",
+      "jobTitle": "Project Manager",
+      "companyName": "Project Leaders Co.",
+      "experienceRequired": 6,
+      "skillsRequired": [
+        "Agile",
+        "Scrum",
+        "Project Management",
+        "Team Leadership"
+      ],
+      "jobDescription": "Lead our project teams to success by ensuring timely delivery of products and overseeing the project lifecycle from inception to completion."
+    },
+    {
+      "id": "6",
+      "jobTitle": "Software Engineer",
+      "companyName": "Tech Innovatorsssss",
+      "experienceRequired": 3,
+      "skillsRequired": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "CSS"
+      ],
+      "jobDescription": "We are looking for a skilled software engineer with experience in building web applications using React and Node.js."
+    },
+    {
+      "id": "7",
+      "jobTitle": "Data Scientist",
+      "companyName": "Data Solutions",
+      "experienceRequired": 2,
+      "skillsRequired": [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "R"
+      ],
+      "jobDescription": "Join our team as a data scientist to help us analyze large data sets and derive actionable insights for business decisions."
+    }
+  ],
+  "ApplicationDetails": [
+    {
+      "id": "25af",
+      "FirstName": "dfsdfsf",
+      "LastName": "sfddsfdsfd",
+      "email": "sugi@gmail.com",
+      "selectedSkills": [
+        {
+          "value": "javascript",
+          "label": "JavaScript"
+        }
+      ],
+      "details": "<p>fsdgdsfgsdfgdf</p>",
+      "companyId": "1"
+    },
+    {
+      "id": "733b",
+      "FirstName": "sugitha ",
+      "LastName": "sdsfsf",
+      "email": "asdf@fdsa.lkj",
+      "selectedSkills": [
+        {
+          "value": "css",
+          "label": "CSS"
+        }
+      ],
+      "details": "<p>zxzcxz</p>",
+      "companyId": "1"
+    },
+    {
+      "id": "6276",
+      "FirstName": "fdgsdgfdsgd",
+      "LastName": "sdsfsf",
+      "email": "sugitha082002@gmail.com",
+      "selectedSkills": [
+        {
+          "value": "javascript",
+          "label": "JavaScript"
+        }
+      ],
+      "details": "<p>sfgsdhdfhgsefd</p>",
+      "companyId": "1"
+    },
+    {
+      "id": "3b1f",
+      "FirstName": "dsfdg",
+      "LastName": "sdsfsf",
+      "email": "asdf@fdsa.lkj",
+      "selectedSkills": [
+        {
+          "value": "css",
+          "label": "CSS"
+        }
+      ],
+      "details": "<p>zsda</p>",
+      "companyId": "1"
+    },
+    {
+      "id": "9f66",
+      "FirstName": "fdgsdgfdsgd",
+      "LastName": "sdfsdf",
+      "email": "sugitha082002@gmail.com",
+      "selectedSkills": [
+        {
+          "value": "javascript",
+          "label": "JavaScript"
+        }
+      ],
+      "details": "<p>fdgfd</p>",
+      "companyId": "1"
+    },
+    {
+      "id": "90b3",
+      "FirstName": "fdgsdgfdsgd",
+      "LastName": "sdsfsf",
+      "email": "sugitha082002@gmail.com",
+      "selectedSkills": [
+        {
+          "value": "css",
+          "label": "CSS"
+        }
+      ],
+      "details": "<p>dsdfsdaf</p>",
+      "companyId": "1"
+    },
+    {
+      "id": "8647",
+      "FirstName": "sugitha ",
+      "LastName": "kaliyamoorthi",
+      "email": "asdf@fdsa.lkj",
+      "selectedSkills": [
+        {
+          "value": "css",
+          "label": "CSS"
+        },
+        {
+          "value": "react",
+          "label": "React"
+        },
+        {
+          "value": "redux",
+          "label": "Redux"
+        },
+        {
+          "value": "tailwind-css",
+          "label": "Tailwind CSS"
+        },
+        {
+          "value": "bootstrap",
+          "label": "Bootstrap"
+        }
+      ],
+      "details": "<p>xzcfsdfs</p>",
+      "companyId": "2"
+    }
+  ],
+  "RegDetails": [
+    {
+      "id": "b7d1",
+      "firstName": "dffssdf",
+      "lastName": "fsdfs",
+      "userName": "rfrf",
+      "password": "qwert",
+      "cpassword": "qwert",
+      "mobileNo": "4354765434"
+    },
+    {
+      "id": "fef7",
+      "firstName": "Sugitha",
+      "lastName": "kaliyamoorthi",
+      "userName": "sriii",
+      "password": "09876",
+      "cpassword": "09876",
+      "mobileNo": "1234567890"
+    },
+    {
+      "id": "6e8c",
+      "firstName": "Sugitha",
+      "lastName": "kaliyamoorthi",
+      "userName": "sugitha",
+      "password": "sugitha",
+      "cpassword": "sugitha",
+      "mobileNo": "1234567890"
+    },
+    {
+      "id": "b0d4"
+    },
+    {
+      "id": "d4e4"
+    },
+    {
+      "id": "7168"
+    },
+    {
+      "id": "134a"
+    }
+  ]
 }

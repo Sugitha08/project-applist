@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: radial-gradient(
+        circle at 50% 50%,
+        rgba(47, 85, 212, 0.1) 0%,
+        rgba(47, 85, 212, 0.1) 33.333%,
+        rgba(47, 85, 212, 0.2) 33.333%,
+        rgba(47, 85, 212, 0.2) 66.666%,
+        rgba(47, 85, 212, 0.3) 66.666%,
+        rgba(47, 85, 212, 0.3) 99.999%
+      )
+      no-repeat;
+    background-size: cover;
+    background-attachment: fixed !important;
+    height: 120vh;
+    width: 100%;
+  }
+  .card {
+    padding: 15px !important;
+  }
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  
+  
+  
