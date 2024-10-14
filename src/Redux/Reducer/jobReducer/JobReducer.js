@@ -1,4 +1,4 @@
-import { GET_JOB_FAILURE, GET_JOB_REQUEST, GET_JOB_SUCCESS } from "../../ActionTypes";
+import * as Types from "../../ActionTypes";
 
 const initialValues = {
   loading: false,
@@ -7,21 +7,27 @@ const initialValues = {
 };
 
 const JobReducer = (state = initialValues, action) => {
-  
   switch (action.type) {
-    case GET_JOB_REQUEST:
+    case Types.GET_JOB_REQUEST:
+    case Types.POST_JOB_REQUEST:
       return {
         ...state,
         loading: true,
       };
-    case GET_JOB_SUCCESS:
-      
+    case Types.GET_JOB_SUCCESS:
       return {
         ...state,
         JobData: action.payload,
         loading: false,
       };
-    case GET_JOB_FAILURE:
+    case Types.POST_JOB_SUCCESS:
+      return {
+        ...state,
+        JobData: [...state.JobData,action.payload],
+        loading: false,
+      };
+    case Types.GET_JOB_FAILURE:
+    case Types.POST_JOB_FAILURE:
       return {
         ...state,
         error: action.payload,

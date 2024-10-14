@@ -1,5 +1,5 @@
 body{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .joblist {
@@ -30,12 +30,6 @@ body{
   font-weight: 600;
 }
 
-.FormButton{
-  border-top: 1px solid #dee2e6;
-  margin-top: 20px;
-  padding-top: 10px;
-}
-
 .page{
   border:1px solid  rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -57,4 +51,17 @@ body{
   transform: translateY(-50%);
   color: #898989;
   font-size: 12px;
+}
+
+.applicationForm{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-header{
+  border-bottom: 1px solid rgb(0 0 0 / 18%);
+  padding: 10px;
+}
+.form-field{
+  padding: 10px;
 }
